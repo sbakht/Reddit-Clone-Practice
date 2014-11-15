@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Creddit.Models
 {
-    interface IPost
+    public interface IPost
     {
         string title { get; set; }
         Subreddit subreddit { get; set; }
