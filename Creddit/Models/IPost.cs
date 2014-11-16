@@ -8,9 +8,11 @@ namespace Creddit.Models
 {
     public interface IPost
     {
-        string title { get; set; }
-        Subreddit subreddit { get; set; }
-        List<Comment> comments { get; set; }
-        int points { get; set; }
+        int PostID { get; set; }
+        string Title { get; set; }
+        int Points { get; set; }
+        DateTime PostDate { get; set; }
+        Subreddit Subreddit { get; set; }
+        ICollection<Comment> Comments { get; set; }
     }
 }
